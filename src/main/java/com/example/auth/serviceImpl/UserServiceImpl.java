@@ -25,38 +25,33 @@ public class UserServiceImpl implements UserService, UserDetailsService {
 
     private final UserRepository userRepository;
     private final RoleRepository roleRepository;
+
     private final PasswordEncoder passwordEncoder;
     @Override
     public User saveUser(User user) {
         user.setPassword(passwordEncoder.encode(user.getPassword()));
-        return userRepository.save(user);
-    }
-
-    @Override
-    public Role saveRole(Role role) {
-        return roleRepository.save(role);
+        return this.userRepository.save(user);
     }
 
     @Override
     public void addRoleToUser(String username, String nom) {
-        User user = userRepository.findByUsername(username);
-        Role role = roleRepository.findByNom(nom);
+        User user = this.userRepository.findByUsername(username);
+        Role role = this.roleRepository.findByNom(nom);
         user.getRoles().add(role);
     }
-
     @Override
     public User getUser(String username) {
-        return userRepository.findByUsername(username);
+        return this.userRepository.findByUsername(username);
     }
 
     @Override
     public List<User> getUsers() {
-        return userRepository.findAll();
+        return this.userRepository.findAll();
     }
 
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
-        User user = userRepository.findByUsername(username);
+        User user = this.userRepository.findByUsername(username);
         if(user==null){
             throw new UsernameNotFoundException("User not found");
         }else {
