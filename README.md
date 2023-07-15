@@ -28,8 +28,8 @@ Le projet expose plusieurs points d'entrée d'API pour la gestion des utilisateu
 
 
 ## Auteurs
-**AHADJITSE Yawo Florent Mathis**
-**Développeur Full Stack**
-**Copyright 2023**
+- **AHADJITSE Yawo Florent Mathis**
+- **Développeur full-stack**
+- **Copyright 2023**
 
 N'hésitez pas à modifier cette documentation selon les besoins de votre projet.
