@@ -26,10 +26,17 @@ Accédez à l'application via l'URL http://localhost:9002.
 ## Points d'entrée de l'API
 Le projet expose plusieurs points d'entrée d'API pour la gestion des utilisateurs et des rôles.
 
+- `POST /api/role/save` : Crée un nouveau rôle.
+- `GET /api/role/{nom}` : Récupère les détails d'un rôle à partir de son nom.
+- `GET /api/roles`  : Récupère la liste des rôles.
+- `GET /api/users` : Recupère la liste des utilisateus.
+- `POST /apiuser/save` : Crée un nouvel utilisateur.
+- `POST /api/login` : Connecte un utilisateur à l'api à partir du `username` et du `password` de ce dernier et renvoie ensuite un `access_token` pour accéder à l'application et `refresh_token` pour rafraîchir l'`access_token`.
+- `POST /api/role/add-to-user` : Ajoute un rôle à un utilisateur à partir de son `username` et le `nom du rôle`.
+- `GET /api/user/info` : Recupère les informations d'un utilisateur à partir d'un `access_token`.
+- `GET /api/refresh-token` : Raffraîchit l'`access_token` à partir d'un `refresh_token`.
 
 ## Auteurs
 - **AHADJITSE Yawo Florent Mathis**
-- **Développeur full-stack**
-- **Copyright 2023**
 
 N'hésitez pas à modifier cette documentation selon les besoins de votre projet.
