@@ -27,13 +27,37 @@ Accédez à l'application via l'URL http://localhost:9002.
 Le projet expose plusieurs points d'entrée d'API pour la gestion des utilisateurs et des rôles.
 
 - `POST /api/role/save` : Crée un nouveau rôle.
+
+  ![1](https://github.com/MaFlore/spring-authentification/assets/101883211/3b070d20-6952-41fa-b280-a48db19e0c68)
+
 - `GET /api/role/{nom}` : Récupère les détails d'un rôle à partir de son nom.
+
+  ![2](https://github.com/MaFlore/spring-authentification/assets/101883211/7fff163a-2f7f-4cdb-a143-706ddc44a910)
+
 - `GET /api/roles`  : Récupère la liste des rôles.
-- `GET /api/users` : Recupère la liste des utilisateus.
+
+  ![3](https://github.com/MaFlore/spring-authentification/assets/101883211/9aeaff0a-f275-4e27-b39a-e41b6410174d)
+
 - `POST /apiuser/save` : Crée un nouvel utilisateur.
+
+  ![4](https://github.com/MaFlore/spring-authentification/assets/101883211/93485826-26fb-4ff7-9fc3-66be0de3c456)
+
+- `GET /api/users` : Recupère la liste des utilisateus.
+
+  ![5](https://github.com/MaFlore/spring-authentification/assets/101883211/6087853a-201d-416d-96ee-f4cf730d3c01)
+
 - `POST /api/login` : Connecte un utilisateur à l'api à partir du `username` et du `password` de ce dernier et renvoie ensuite un `access_token` pour accéder à l'application et `refresh_token` pour rafraîchir l'`access_token`.
+
+  ![6](https://github.com/MaFlore/spring-authentification/assets/101883211/452f4b67-bb59-47fa-96b3-c62ad8fbb672)
+
 - `POST /api/role/add-to-user` : Ajoute un rôle à un utilisateur à partir de son `username` et le `nom du rôle`.
+
+  ![7](https://github.com/MaFlore/spring-authentification/assets/101883211/fb394504-8ad0-47bd-b42f-08a257b3904f)
+
 - `GET /api/user/info` : Recupère les informations d'un utilisateur à partir d'un `access_token`.
+
+  ![Capture d’écran 2023-07-15 005952](https://github.com/MaFlore/spring-authentification/assets/101883211/b74942d4-7752-4dec-8701-e1393f9902b5)
+
 - `GET /api/refresh-token` : Raffraîchit l'`access_token` à partir d'un `refresh_token`.
 
 ## Auteurs
