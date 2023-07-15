@@ -60,7 +60,7 @@ Le projet expose plusieurs points d'entrée d'API pour la gestion des utilisateu
 
 - `GET /api/refresh-token` : Raffraîchit l'`access_token` à partir d'un `refresh_token`.
 
-## Auteurs
-- **AHADJITSE Yawo Florent Mathis**
+  ![Capture d’écran 2023-07-15 013302](https://github.com/MaFlore/spring-authentification/assets/101883211/8ec78beb-4856-48b7-af0f-a761f9717252)
 
+## Merci !!😍😍😍
 N'hésitez pas à modifier cette documentation selon les besoins de votre projet.
