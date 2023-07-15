@@ -43,7 +43,7 @@ public class UserController {
 
     @RequestMapping(value = "/role/add-to-user", method = RequestMethod.POST, headers = "accept=Application/json")
     public void addRoleToUser(@RequestBody RoleToUserForm form){
-        this.userService.addRoleToUser(form.getUsername(), form.getNom());
+        this.userService.addRoleToUser(form.getUsername(), form.getNomRole());
     }
 
     @RequestMapping(value = "/user/info", method = RequestMethod.GET)
