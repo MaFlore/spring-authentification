@@ -36,6 +36,7 @@ public class UserServiceImpl implements UserService, UserDetailsService {
         User user = this.userRepository.findByUsername(username);
         Role role = this.roleRepository.findByNom(nom);
         user.getRoles().add(role);
+        this.userRepository.save(user);
     }
     @Override
     public User getUser(String username) {
